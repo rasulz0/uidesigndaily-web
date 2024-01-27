@@ -3,18 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/styles/style.css">
     <title>UI Design Daily</title>
 </head>
 <body>
-    <header>
-
+    <header class="header">
+        <div class="header__main container">
+            <div class="logo">
+                <img src="./assets//img/logo.svg" alt="">
+            </div>
+            <nav class="navbar">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="" class="nav__link">Free Designs</a></li>
+                    <li class="nav__item"><a href="" class="nav__link">License</a></li>
+                    <li class="nav__item"><a href="" class="nav__link">Articles</a></li>
+                    <li class="nav__item"><a href="" class="nav__link">Contributors</a></li>
+                    <li class="nav__item"><a href="" class="nav__link">About</a></li>
+                </ul>
+            </nav>
+            <div class="btn__group">
+                <button class="btn btn-white">Log in</button>
+                <button class="btn btn-blue">Sign Up</button>
+            </div>
+        </div>
     </header>
     <main>
-
+        <div class="hero">
+            <div class="hero__main container">
+                <div class="hero__badge">
+                    Day 1384
+                </div>
+                <h1 class="hero__heading">Free UI resources for everyone</h1>
+                <div class="hero__subtitle">
+                    <p>The largest database of 100% free UI components and designs available in the formats popular by UI designers.</p>
+                </div>
+                <div class="hero__filter">
+                    <div class="select">
+                        <select class="select-box">
+                            <option value="">Free Designs</option>
+                            <option value="">HTML</option>
+                            <option value="">HTML</option>
+                            <option value="">HTML</option>
+                        </select>
+                    </div>
+                    <div class="searchbar">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="search" placeholder="Search">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="designs">
+            <div class="designs__main container">
+                <div class="designs__navigation">
+                    <div class="design__btn">
+                        <button class="design active">Latest</button>
+                        <button class="design passive">Popular</button>
+                    </div>
+                    <ul class="design__nav">
+                        <li class="design__item"><a href="" class="design__link">All</a></li>
+                        <li class="design__item"><a href="" class="design__link">Web</a></li>
+                        <li class="design__item"><a href="" class="design__link">Mobile</a></li>
+                        <li class="design__item"><a href="" class="design__link">UI Kit</a></li>
+                        <li class="design__item"><a href="" class="design__link">Coded</a></li>
+                    </ul>
+                    <div>
+                        <div class="brand__list">
+                            <div><img src="./assets/img/figma.svg" alt=""></div>
+                            <div><img src="./assets/img/figma.svg" alt=""></div>
+                            <div><img src="./assets/img/figma.svg" alt=""></div>
+                            <div><img src="./assets/img/figma.svg" alt=""></div>
+                            <div><img src="./assets/img/figma.svg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
-    <footer>
-        
-    </footer>
 </body>
 </html>
