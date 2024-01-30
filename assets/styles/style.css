@@ -28,6 +28,7 @@ body,html{
     width: 100%;
     padding: 0 50px;
     margin: 0 auto;
+    scroll-behavior: ;
 }
 
 header{
@@ -221,9 +222,60 @@ header{
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    border: 1px solid var(--pink-color);
 }
 .design__link{
     color: var(--secondary-color);
     opacity: .7;
+}
+.brand__active{
+    border: 1px solid var(--pink-color);
+}
+.brand__inactive{
+    border: 1px solid var(--active-color);
+}
+.design__photo{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    gap: 33px;
+}
+.person__by{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 31px;
+}
+.Design__by{
+    width: 427px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 150px;
+}
+.fa-solid{
+    font-size: 14px;
+    display: flex;
+    gap: 5px;
+}
+.icon__1{
+    font-size: 14px;
+    display: flex;
+    gap: 20px;
+}
+.Molla__by{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-size: 14px;
+    font-family: inherit;
+}
+.jenny{
+    font-size: 14px;
+    font-family: inherit;
+    font-weight: bold;         
+}
+@media (max-width : 1280px){
+    .person__by{
+        width: 40%;
+    }    
 }
