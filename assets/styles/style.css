@@ -28,7 +28,7 @@ body,html{
     width: 100%;
     padding: 0 50px;
     margin: 0 auto;
-    scroll-behavior: ;
+    scroll-behavior: smooth;
 }
 
 header{
@@ -233,11 +233,29 @@ header{
 .brand__inactive{
     border: 1px solid var(--active-color);
 }
-.design__photo{
-    margin-top: 40px;
+.card-wrapper{
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 33px;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 25px;
+}
+.card{
+    width: 30%;
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #c2c2c2;
+    border-radius: 15px;
+    margin: 5px;
+}
+.card-img{
+    width: 100%;
+}
+.card-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .person__by{
     margin-top: 20px;
@@ -246,11 +264,10 @@ header{
     gap: 31px;
 }
 .Design__by{
-    width: 427px;
     margin-top: 20px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 150px;
 }
 .fa-solid{
     font-size: 14px;
@@ -274,8 +291,34 @@ header{
     font-family: inherit;
     font-weight: bold;         
 }
-@media (max-width : 1280px){
-    .person__by{
-        width: 40%;
-    }    
+
+@media (max-width : 992px){
+    .header .header__main .navbar{
+        display: none;
+    }
+    main .designs .designs__main .designs__navigation .design__nav{
+        display: none;
+    }
+    main .designs .designs__main .designs__navigation div .brand__list{
+        display: none;
+    }
+    main .designs .designs__main .designs__navigation .design__btn{
+        width: 100%;
+    }
+    main .designs .designs__main .designs__navigation .design__btn .design{
+        width: 48%;
+    }
+    main .designs .designs__main .card-wrapper .card{
+        width: 48%;
+    }
+    main .hero .hero__main .hero__badge{
+        display: none;
+    }
+}
+
+@media (max-width : 768px){
+    
+    main .designs .designs__main .card-wrapper .card{
+        width: 100%;
+    }
 }
